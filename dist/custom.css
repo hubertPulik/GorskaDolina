@@ -1,0 +1,192 @@
+@charset "UTF-8";
+.galeria {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galeria img {
+  max-width: 20%;
+}
+
+.column {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.pionowo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  background-image: url(../assets/Tło.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  width: 1367px;
+  margin: 0 auto 0 auto;
+}
+
+.wysrodkowanie {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tekst-wysrodkowany {
+  text-align: center;
+}
+
+#nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav ul li {
+  font-size: 30px;
+  padding: 15px;
+  font-family: 'Handlee', cursive;
+  color: #f39220;
+}
+
+#nav ul li a {
+  color: #f39220;
+}
+
+#nav ul li a :hover {
+  color: black;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body-tekst {
+  font-size: 2.2rem;
+}
+
+h2, h3 {
+  font-family: 'Handlee', cursive;
+  color: #f39220;
+}
+
+.separator {
+  height: 45px;
+  width: 100%;
+}
+
+.karta {
+  border: 1px solid #107878;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px 20px !important;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.karta img {
+  margin-bottom: 30px;
+}
+
+.karta p {
+  font-weight: 600;
+}
+
+.karta2 {
+  border: 1px solid #107878;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 20px !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.karta2 img {
+  margin-bottom: 30px;
+}
+
+.karta2 p {
+  font-weight: 600;
+}
+
+footer {
+  background-color: #107878;
+  width: 100%;
+  padding: 30px;
+  color: white;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tlo-01 {
+  background-image: url(../assets/Obraz-w-naglowku.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tlo-02 {
+  background-image: url(../assets/Tlo-ikon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.tlo-03 {
+  background-image: url(../assets/);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#galeria, #kontakt {
+  background: #107878;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 120, 120, 0.504639)), to(rgba(243, 146, 32, 0.50744)));
+  background: linear-gradient(90deg, rgba(16, 120, 120, 0.504639) 0%, rgba(243, 146, 32, 0.50744) 100%);
+}
+
+#kontakt {
+  color: white;
+}
+
+#galeria img:active {
+  /* IE 9 */
+  -webkit-transform: scale(3.5);
+  /* Safari 3-8 */
+  transform: scale(3.5);
+  position: fixed;
+  top: 25%;
+  left: 25%;
+}
+/*# sourceMappingURL=custom.css.map */

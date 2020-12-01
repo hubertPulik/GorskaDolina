@@ -1,0 +1,161 @@
+.galeria {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        max-width: 20%;
+        
+    }
+}
+
+.column {
+    display: flex !important;
+}
+
+.pionowo {
+    flex-direction: column;
+}
+
+body {
+    background-image: url(../assets/Tło.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 1367px;
+    margin: 0 auto 0 auto;
+}
+
+.wysrodkowanie {
+    justify-content: center;
+}
+
+.tekst-wysrodkowany {
+    text-align: center;
+}
+
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+
+    li {
+        font-size: 30px;
+        padding: 15px;
+        font-family: 'Handlee', cursive;
+        color: rgb(243, 146, 32);
+        a {
+            color: rgb(243, 146, 32);
+            :hover {
+                color: black;
+            }
+        }
+    }
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-tekst {
+    font-size: 2.2rem;
+}
+
+h2, h3 {
+    font-family: 'Handlee', cursive;
+    color: rgb(243, 146, 32);
+}
+
+.separator {
+    height: 45px;
+    width: 100%;
+}
+
+.karta {
+    border: 1px solid rgb(16, 120, 120);
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    padding: 50px 20px !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    justify-content: center;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.karta2 {
+    border: 1px solid rgb(16, 120, 120);
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    padding: 50px 20px !important;
+    justify-content: center;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
+
+footer {
+    background-color: rgb(16, 120, 120);
+    width: 100%;
+    padding: 30px;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tlo-01 {
+    background-image: url(../assets/Obraz-w-naglowku.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tlo-02 {
+    background-image: url(../assets/Tlo-ikon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.tlo-03 {
+    background-image: url(../assets/);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#galeria, #kontakt {
+    background: rgb(16,120,120);
+    background: linear-gradient(90deg, rgba(16,120,120,0.5046393557422969) 0%, rgba(243,146,32,0.5074404761904762) 100%);
+}
+
+#kontakt {
+    color: white;
+}
+
+#galeria img:active {
+            -ms-transform: scale(3.5); /* IE 9 */
+            -webkit-transform: scale(3.5); /* Safari 3-8 */
+            transform: scale(3.5);
+            position: fixed;
+            top: 25%;
+            left: 25%;
+          }
+
+
