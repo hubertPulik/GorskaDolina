@@ -1,0 +1,220 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CJ Patoilo" />
+    <meta
+      name="description"
+      content="Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code."
+    />
+    <title>Górska Dolina pod Białym Orłem</title>
+    <link rel="icon" href="https://milligram.io/images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="../Strona 2020/dist/milligram.min.css" />
+    <link rel="stylesheet" href="https://milligram.io/styles/main.css" />
+    <link rel="stylesheet" href="../Strona 2020/dist/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFGapMLh-hPu4Cz47m3LqR7d9Xto5uFIE&callback=initMap">
+    </script>
+     <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <section class="separator"></section>
+      <section id="logo">
+        <div class="row content">
+            <div class="column column-33"></div>
+            <div class="column column-33 wysrodkowanie"><img src="../Strona 2020/assets/logo@2x.png" alt=""></div>
+            <div class="column column-33"></div>
+          </div>
+      </section>
+      <section class="separator"></section>
+      <section id="nav">
+        <ul>
+          <li><a href="#logo">Start</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#opinie">Opinie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </section>
+      <section class="separator"></section>
+      <section id="header" class="content">
+        <div class="row tlo-01">
+          <div class="column column-50 column-offset-50 pionowo karta2">
+            <h1>Kiedy potrzebujesz miejsca na odpoczynek</h1>
+            <p class="body-tekst">Kiedy czujesz, że potrzebujesz odpoczynku od miasta, od pędu, głośnych silników samochodów i autobusów stojących w korkach i kolejek w galeriach handlowych, jesteś w idealnym miejscu dla Ciebie! Zapraszamy do naszego gospodarstwa agroturystycznego. Czeka na Ciebie wspaniała atmosfera, smaczne jedzenie i obcowanie z naturą. Zapraszamy do zapoznania się z naszą ofertą.</p>
+          </div>
+        </div>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="o-nas" class="content">
+        <div class="row">
+        <div class="column column-80 column-offset-10 pionowo"><h2 class="tekst-wysrodkowany">Gospodarstwo agroturystyczne w Ujanowicach</h2>
+        <p class="body-tekst tekst-wysrodkowany">Górska Dolina to miejsce tworzone z wielką pasją i dbałością o każdy, nawet najmniejszy detal. Rodzinna atmosfera, życzliwość i otwartość sprawią, że Twój wypoczynek będzie obfitował w radość i uśmiech każdego dnia. Bliskość natury i różnorodność otaczającej przyrody pozwalają na chwilę wytchnienia od ciągłego biegu i hałasu codziennego życia – u nas czas płynie wolniej i spokojniej.</p></div>
+        </div>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="oferta" class="tlo-02">
+        <section class="separator"></section>
+        <section class="separator"></section>
+        <h2 class="tekst-wysrodkowany">Oferta</h2>
+        <section class="separator"></section>
+        <div class="row wysrodkowanie">
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/mountain@2x.png"></span>
+            <p class="tekst-wysrodkowany">wycieczki piesze i rowerowe. W góry, do lasu (zbieranie grzybów, łowienie ryb, kontakt z naturą i zwierzętami)</p>
+          </div>
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span  class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/014-bed@2x.png"></span>
+            <p class="tekst-wysrodkowany">4 dwuosobowe pokoje, w pełni wyposażone (tv, łazienka, kuchnia...)</p>
+          </div>
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span  class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/042-carrot@2x.png"></span>
+            <p class="tekst-wysrodkowany">posiłki przygotowane z plonów naszego gospodarstwa</p>
+          </div>
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/026-sprout-2@2x.png"></span>
+            <p class="tekst-wysrodkowany">możliwość uczestniczenia w pracach w gospodarstwie</p>
+          </div>
+        </div>
+        <section class="separator"></section>
+        <div class="row wysrodkowanie">
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/016-sand-castle@2x.png"></span>
+            <p class="tekst-wysrodkowany">organizujemy wycieczki do: Krakowa, Kopalni soli w Wieliczce lub Bochni, Krynicy Górskiej, Parku Etnograficznego i skansenu w Nowym Sączu i wiele innych.</p>
+          </div>
+          <div class="column column-20 karta pionowo wysrodkowanie">
+            <span class="wysrodkowanie tekst-wysrodkowany"><img src="./assets/019-ski-3@2x.png"></span>
+            <p class="tekst-wysrodkowany">Niedaleko Naszego gospodarstwa znajduje się wyciąg narciarski Laskowa - Kamionna (około 10 km). Zapewniamy pomoc w korzystaniu z atrakcji Naszego regionu.</p>
+          </div>
+        </div>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="opis" class="content">
+        <div class="row" id=>
+          <div class="column column-60 column-offset-20 pionowo"><p class="body-tekst">Komfortowo wyposażone dwu- i trzyosobowe pokoje z oddzielnymi łazienkami. W każdym z nich znajduje się telewizor, szafa na ubrania i szafki nocne. Zapewniamy Państwu również dostęp do w pełni funkcjonalnej kuchni.
+          </p>
+          <p class="body-tekst">Ujanowice to urokliwa wioska, położona w Małopolsce, w dolinie rzeki Łososina, u stóp malowniczych wzgórz Beskidu Wyspowego. Okolica zachwyca swoim pięknem, bogactwem i rozmaitością przyrody.
+          </p>
+          <p class="body-tekst">Niecałe pół godziny drogi od Ujanowic leży Nowy Sącz, wypełniony zabytkami i wyjątkową atmosferą. 50 km dzieli nas od Wieliczki – miasta znanego z unikatowej w skali całego świata kopalni soli. Stamtąd rzut beretem do stolicy Małopolski i polskiej turystyki – pięknego Krakowa.
+          </p>
+          <p class="body-tekst">W Górskiej Dolinie dbamy również o <strong>zwierzęta</strong>) – towarzyszą nam o każdej porze roku. Psy, koty, gęsi, jeże czy nawet żółwie! Każde z nich jest wyjątkowe.
+        </p></div>
+        </div>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="galeria">
+        <section class="separator"></section>
+        <h2 class="tekst-wysrodkowany">Galeria</h2>
+        <section class="separator"></section>
+        <div class="galeria content">
+          <img src="./galeria/Agrosturystyka Ujanowice 0001.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0002.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0003.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0004.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0005.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0006.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0007.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0008.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0009.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0010.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0011.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0012.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0013.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0014.JPG" alt="">
+          <img src="./galeria/Agrosturystyka Ujanowice 0015.JPG" alt="">
+        </div>
+        <section class="separator"></section>
+        <section class="separator"></section>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="opinie"  class="content">
+        <h2 class="tekst-wysrodkowany">Opinie</h2>
+        <div class="row">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+      </section>
+      <section class="separator"></section>
+      <section class="separator"></section>
+      <section id="kontakt">
+        <section class="separator"></section>
+        <H2 class="tekst-wysrodkowany">Kontakt</H2>
+        <h4 class="tekst-wysrodkowany">W celu zapoznania się ze szczegółami naszej oferty zapraszamy do kontaktu:</h4>
+        <h4 class="tekst-wysrodkowany">Tel. stacjonarny: <strong>18 33 34 030</strong></h4>
+        <h4 class="tekst-wysrodkowany">Tel. komórkowy: <strong>601 744 442</strong></h4>
+        <section class="separator"></section>
+      </section>
+      
+    </div>
+
+    <section id="mapa">
+      <div id="map"></div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="column column-10"></div>
+        <div class="column column-40">
+          <span><img src="./assets/logo copy@2x.png"></span>
+        </div>
+        <div class="column column-40" style="justify-content: flex-end;">
+          <span>
+            <h4>Górska Dolina pod Białym Orłem</h4>
+            <p>Nr stacjonarny : 18 33 34 030</p>
+            <p>Nr kom: 601 744 442</p>
+            <p>mail: marciszmaria@gmail.com</p>
+            <p>adres: 34-603 Ujanowice</p>
+            <p>Ujanowice 40</p>
+          </span>
+        </div>
+        <div class="column column-10"></div>
+      </div>
+    </footer>
+
+    <script src="https://milligram.io/scripts/main.js"></script>
+  </body>
