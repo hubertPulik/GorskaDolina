@@ -28,7 +28,7 @@
 }
 
 body {
-  background-image: url('https://hubertpulik.github.io/Strona-2020/assets/Tło.jpg');
+  background-image: url(https://hubertpulik.github.io/Strona-2020/assets/Tło.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   scroll-behavior: smooth;
@@ -158,7 +158,7 @@ footer {
 }
 
 .tlo-02 {
-  background-image: url('/assets/Tlo-ikon.png');
+  background-image: url('https://hubertpulik.github.io/Strona-2020/assets/Tlo-ikon.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
