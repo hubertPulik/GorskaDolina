@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #107878;
+      }
+    </style>
+  </defs>
+  <g id="fb-c" transform="translate(-3046 -915)">
+    <circle id="Ellipse_36" data-name="Ellipse 36" class="cls-1" cx="17" cy="17" r="17" transform="translate(3046 915)"/>
+    <path id="_023-facebook" data-name="023-facebook" class="cls-2" d="M14.8,3.5h1.924V.148A24.847,24.847,0,0,0,13.923,0C11.149,0,9.249,1.745,9.249,4.952V7.9H6.187v3.747H9.249v9.427H13V11.652H15.94L16.406,7.9H13V5.324c0-1.083.292-1.824,1.8-1.824Z" transform="translate(3051.543 921.461)"/>
+  </g>
+</svg>
