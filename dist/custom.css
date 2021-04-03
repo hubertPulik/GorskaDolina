@@ -1,5 +1,68 @@
 @charset "UTF-8";
-.galeria {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+}
+
+body {
+  background-image: url(/assets/Tło.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.body-tekst {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Handlee", cursive;
+  color: #f39220;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #107878;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.doPrawej {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.doSrodka {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galeriaSekcja {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -10,7 +73,7 @@
       flex-wrap: wrap;
 }
 
-.galeria img {
+.galeriaSekcja img {
   max-width: 20%;
 }
 
@@ -25,17 +88,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-body {
-  background-image: url("/assets/Tło.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .content {
@@ -53,6 +105,10 @@ html {
   text-align: center;
 }
 
+#nav {
+  height: 80px;
+}
+
 #nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,29 +123,24 @@ html {
 #nav ul li {
   font-size: 30px;
   padding: 15px;
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
   color: #f39220;
 }
 
 #nav ul li a {
   color: #f39220;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  text-decoration: none;
 }
 
-#nav ul li a :hover {
+#nav ul li a:hover {
   color: black;
+  font-size: 32px;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.body-tekst {
-  font-size: 2.2rem;
-}
-
-h2, h3 {
-  font-family: 'Handlee', cursive;
-  color: #f39220;
+  font-family: "Quicksand", sans-serif;
 }
 
 .separator {
@@ -97,32 +148,101 @@ h2, h3 {
   width: 100%;
 }
 
+#oferta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kontenerKarty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1500px;
+}
+
 .karta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 280px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border: 1px solid #107878;
-  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
   padding: 50px 20px !important;
   margin-right: 20px !important;
   margin-left: 20px !important;
+  margin-top: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .karta img {
   margin-bottom: 30px;
+  max-width: 130px;
 }
 
 .karta p {
   font-weight: 600;
+  color: black;
+  margin-right: 8%;
+  margin-left: 8%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.karta:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .karta2 {
   border: 1px solid #107878;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 50px 20px !important;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
+  padding: 50px 50px !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 50%;
 }
 
 .karta2 img {
@@ -130,7 +250,7 @@ h2, h3 {
 }
 
 .karta2 p {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer {
@@ -152,13 +272,13 @@ footer {
 }
 
 .tlo-01 {
-  background-image: url('/assets/Obraz-w-naglowku.png');
+  background-image: url(/assets/Obraz-w-naglowku.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .tlo-02 {
-  background-image: url('/assets/Tlo-ikon.png');
+  background-image: url(/assets/Tlo-ikon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -170,23 +290,189 @@ footer {
   background-repeat: no-repeat;
 }
 
-#galeria, #kontakt {
+#galeriaSekcja,
+#kontakt {
   background: #107878;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 120, 120, 0.504639)), to(rgba(243, 146, 32, 0.50744)));
-  background: linear-gradient(90deg, rgba(16, 120, 120, 0.504639) 0%, rgba(243, 146, 32, 0.50744) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 120, 120, 0.4)), to(rgba(243, 146, 32, 0.4)));
+  background: linear-gradient(90deg, rgba(16, 120, 120, 0.4) 0%, rgba(243, 146, 32, 0.4) 100%);
 }
 
 #kontakt {
   color: white;
 }
 
-#galeria img:active {
-  /* IE 9 */
-  -webkit-transform: scale(3.5);
-  /* Safari 3-8 */
-  transform: scale(3.5);
+.tekstKontakt {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #107878;
+}
+
+.tekstKontakt strong {
+  color: #f39220;
+}
+
+#galeria {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   position: fixed;
-  top: 25%;
-  left: 25%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5 ease-in-out;
+  transition: all .5 ease-in-out;
+}
+
+#galeria #galeriaWraper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#galeria #galeriaWraper #zamknij {
+  display: block;
+  font-family: 'PT Sans';
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#galeria #galeriaWraper #nawigacja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#galeria #galeriaWraper #nawigacja span {
+  font-family: 'PT Sans';
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#galeria #galeriaWraper #nawigacja span:hover {
+  color: grey;
+}
+
+#galeria #galeriaWraper .imgBoks {
+  width: 55vw;
+  height: calc(55vw * 0.66);
+  background-color: #fff;
+  padding: 30px;
+}
+
+#galeria #galeriaWraper .imgBoks #slajd {
+  width: 100%;
+  height: 100%;
+}
+
+#galeria #galeriaWraper .imgBoks .s1 {
+  background-image: url(../galeria/1.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .s2 {
+  background-image: url(../galeria/2.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .s3 {
+  background-image: url(../galeria/3.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .s4 {
+  background-image: url(../galeria/4.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .s5 {
+  background-image: url(../galeria/5.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .s6 {
+  background-image: url(../galeria/6.jpg);
+}
+
+#galeria #galeriaWraper .imgBoks .slajd {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ukrytaGaleria {
+  display: none;
+}
+
+.galeriaProjektu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.galeriaProjektu div {
+  width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galeriaProjektu img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1365px) {
+  .glowny,
+  body,
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

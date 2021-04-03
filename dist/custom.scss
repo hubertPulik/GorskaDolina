@@ -1,10 +1,76 @@
-.galeria {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+$kolor1: rgb(243, 146, 32);
+$kolor2: rgb(16, 120, 120);
+$font1: 'Handlee',
+cursive;
+$font2: 'Quicksand',
+sans-serif;
+
+
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(/assets/Tło.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+}
+
+.body-tekst {
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font1;
+    color: $kolor1;
+}
+
+h1 {
+    font-size: 3rem;
+    color: $kolor2;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.doPrawej {
+    justify-content: flex-end;
+}
+
+.doSrodka {
+    justify-content: center;
+}
+
+.galeriaSekcja {
     flex: auto;
     display: flex;
     flex-wrap: wrap;
+
     img {
         max-width: 20%;
-        
+
     }
 }
 
@@ -16,16 +82,6 @@
     flex-direction: column;
 }
 
-body {
-    background-image: url(/assets/Tło.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    scroll-behavior: smooth;
-}
-
-html {
-    scroll-behavior: smooth;
-}
 
 .content {
     width: 1367px;
@@ -40,6 +96,9 @@ html {
     text-align: center;
 }
 
+#nav {
+    height: 80px;
+}
 
 #nav ul {
     display: flex;
@@ -50,68 +109,106 @@ html {
     li {
         font-size: 30px;
         padding: 15px;
-        font-family: 'Handlee', cursive;
-        color: rgb(243, 146, 32);
+        font-family: $font1;
+        color: $kolor1;
+
         a {
-            color: rgb(243, 146, 32);
-            :hover {
+            color: $kolor1;
+            transition: all .5s ease-in-out;
+            text-decoration: none;
+
+            &:hover {
                 color: black;
+                font-size: 32px;
             }
         }
     }
 }
+
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font2;
 }
 
-.body-tekst {
-    font-size: 2.2rem;
-}
 
-h2, h3 {
-    font-family: 'Handlee', cursive;
-    color: rgb(243, 146, 32);
-}
 
 .separator {
     height: 45px;
     width: 100%;
 }
 
+#oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontenerKarty {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
 .karta {
-    border: 1px solid rgb(16, 120, 120);
-    background-color: rgba($color: #fff, $alpha: 0.8);
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    flex-grow: 1;
+    border: 1px solid $kolor2;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
     padding: 50px 20px !important;
     margin-right: 20px !important;
     margin-left: 20px !important;
+    margin-top: 30px;
     justify-content: center;
+    transform: scale(1);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition: all .5s ease-in-out;
 
     img {
         margin-bottom: 30px;
+        max-width: 130px;
     }
 
     p {
         font-weight: 600;
+        color: black;
+        margin-right: 8%;
+        margin-left: 8%;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &:hover {
+        transform: scale(1.025);
     }
 }
 
 .karta2 {
-    border: 1px solid rgb(16, 120, 120);
-    background-color: rgba($color: #fff, $alpha: 0.5);
-    padding: 50px 20px !important;
+    border: 1px solid $kolor2;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 34px 32px -16px rgba(0, 0, 0, 0.56);
+    padding: 50px 50px !important;
     justify-content: center;
+    width: 50%;
 
     img {
         margin-bottom: 30px;
     }
 
     p {
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 
 footer {
-    background-color: rgb(16, 120, 120);
+    background-color: $kolor2;
     width: 100%;
     padding: 30px;
     color: white;
@@ -140,22 +237,162 @@ footer {
     background-repeat: no-repeat;
 }
 
-#galeria, #kontakt {
-    background: rgb(16,120,120);
-    background: linear-gradient(90deg, rgba(16,120,120,0.5046393557422969) 0%, rgba(243,146,32,0.5074404761904762) 100%);
+#galeriaSekcja,
+#kontakt {
+    background: $kolor2;
+    background: linear-gradient(90deg, rgba(16, 120, 120, 0.4) 0%, rgba(243, 146, 32, 0.4) 100%);
 }
 
 #kontakt {
     color: white;
 }
 
-#galeria img:active {
-            -ms-transform: scale(3.5); /* IE 9 */
-            -webkit-transform: scale(3.5); /* Safari 3-8 */
-            transform: scale(3.5);
-            position: fixed;
-            top: 25%;
-            left: 25%;
-          }
+.tekstKontakt {
+    font-family: $font2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $kolor2;
+
+    strong {
+        color: $kolor1;
+    }
+
+}
 
 
+//galeria
+
+#galeria {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5 ease-in-out;
+
+    #galeriaWraper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #zamknij {
+            display: block;
+            font-family: 'PT Sans';
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+
+
+        }
+
+        #nawigacja {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            span {
+                font-family: 'PT Sans';
+                font-size: 25px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: -3px;
+                margin-left: 3px;
+                margin-right: 3px;
+
+                &:hover {
+                    color: grey;
+                }
+            }
+        }
+
+        .imgBoks {
+            width: 55vw;
+            height: calc(55vw * 0.66);
+            background-color: #fff;
+            padding: 30px;
+
+            #slajd {
+                width: 100%;
+                height: 100%;
+            }
+
+            .s1 {
+                background-image: url(../galeria/1.jpg);
+            }
+
+            .s2 {
+                background-image: url(../galeria/2.jpg);
+            }
+
+            .s3 {
+                background-image: url(../galeria/3.jpg);
+            }
+
+            .s4 {
+                background-image: url(../galeria/4.jpg);
+            }
+
+            .s5 {
+                background-image: url(../galeria/5.jpg);
+            }
+
+            .s6 {
+                background-image: url(../galeria/6.jpg);
+            }
+
+            .slajd {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+
+}
+
+.ukrytaGaleria {
+    display: none;
+}
+
+.galeriaProjektu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.galeriaProjektu div {
+    width: 300px;
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.galeriaProjektu img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1365px) {
+
+    .glowny,
+    body,
+    html {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
