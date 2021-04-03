@@ -608,7 +608,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
