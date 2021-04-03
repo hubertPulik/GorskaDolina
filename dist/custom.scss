@@ -2,7 +2,7 @@
 
 
 $kolor1: rgb(243, 146, 32);
-$kolor2: rgb(16, 120, 120);
+$kolor2: #107878;
 $font1: 'Handlee',
 cursive;
 $font2: 'Quicksand',
@@ -212,10 +212,8 @@ footer {
     width: 100%;
     padding: 30px;
     color: white;
-    text-align: right;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .tlo-01 {
@@ -256,7 +254,80 @@ footer {
     strong {
         color: $kolor1;
     }
+}
 
+.stopka {
+    justify-content: space-around;
+}
+
+#stopkaLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        max-width: 120px;
+    }
+
+    p {
+        font-family: $font2;
+        font-size: 0.7rem;
+        max-width: 300px;
+        text-align: left;
+    }
+}
+
+#stopkaMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    ul {
+        list-style: none;
+        margin-left: 0px;
+        padding: 0px;
+
+        li {
+            margin-left: 0px;
+        }
+    }
+
+    a {
+        font-family: $font2;
+        color: white;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+}
+
+#stopkaSocjale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+        margin-top: 30px;
+    }
+}
+
+#stopkaKontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+        font-family: $font2;
+        font-size: 1.1rem;
+        text-align: right;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: .9rem;
+        text-align: right;
+    }
 }
 
 
@@ -371,6 +442,7 @@ footer {
 
 .galeriaProjektu div {
     width: 300px;
+    padding: 10px;
     justify-self: center;
     justify-items: center;
     align-content: center;
@@ -379,6 +451,13 @@ footer {
 
 .galeriaProjektu img {
     width: 100%;
+    border: 1px solid $kolor1;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media screen and (max-width: 1365px) {
