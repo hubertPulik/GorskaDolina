@@ -7,6 +7,8 @@ html {
   margin: 0px;
   padding: 0px;
   font-size: 20px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,6 +20,17 @@ body {
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+section,
+h1,
+h2,
+h3,
+p,
+div,
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h2 {
@@ -48,6 +61,8 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .doPrawej {
@@ -113,11 +128,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 #nav ul li {
@@ -582,6 +605,70 @@ footer {
   }
   .content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #nav {
+    height: auto;
+  }
+  #logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logo img {
+    max-width: 250px;
+  }
+  #header,
+  #o-nas,
+  #opis {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .karta2 {
+    width: 100%;
+    margin-top: 200px;
+    padding: 25px !important;
+  }
+  .karta2 h1 {
+    font-size: 1.3rem;
+  }
+  .karta2 p {
+    font-size: 1rem;
+  }
+  .stopka {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stopka #stopkaLogo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stopka #stopkaLogo p {
+    text-align: center;
+  }
+  .stopka #stopkaMenu {
+    text-align: center;
+  }
+  .stopka #stopkaKontakt h4,
+  .stopka #stopkaKontakt p {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=custom.css.map */
