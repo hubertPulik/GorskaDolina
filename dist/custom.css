@@ -276,6 +276,107 @@ p {
   font-weight: 500;
 }
 
+#opinie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#opinie .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#opinie .opinie {
+  overflow-x: hidden;
+  position: relative;
+  height: 300px;
+  width: 960px;
+}
+
+#opinie .opinie .opinieSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#opinie .opinia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 300px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.521);
+  border: 1px solid #107878;
+  border-radius: 50%;
+  padding: 33px;
+  margin-right: 30px;
+}
+
+#opinie .opinia p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: .8rem;
+  color: black;
+  font-weight: 500;
+}
+
+#opinie .opinia h4 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  #opinie .opinie {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+  #opinie .opinie {
+    width: 630px;
+  }
+}
+
 footer {
   background-color: #107878;
   width: 100%;
@@ -483,6 +584,20 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10px;
+}
+
+#galeria #galeriaWraper #nawigacja img {
+  width: 25px;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+#galeria #galeriaWraper #nawigacja img:hover {
+  -webkit-filter: brightness(1.4);
+          filter: brightness(1.4);
 }
 
 #galeria #galeriaWraper #nawigacja span {
@@ -502,19 +617,19 @@ footer {
 #galeria #galeriaWraper .imgBoks {
   width: 55vw;
   height: calc(55vw * 0.66);
-  background-color: #fff;
-  padding: 30px;
+  padding: 0px;
 }
 
 #galeria #galeriaWraper .imgBoks #slajd {
   width: 100%;
   height: 100%;
+  border: 2px solid white;
 }
 
 #galeria #galeriaWraper .imgBoks .slajd {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .ukrytaGaleria {

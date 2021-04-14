@@ -7,6 +7,7 @@ const zamknij = document.getElementById('zamknij');
 const aktywnySlajd = document.getElementById("slajd");
 const poprzedni = document.querySelector('.wstecz');
 const nastepny = document.querySelector('.naprzod');
+const galeriaWraper = document.getElementById('galeriaWraper');
 let aktywnyObraz = 0;
 
 const powiekszenie = (e) => {
@@ -56,6 +57,16 @@ miniatury.forEach(miniatura => {
     miniatura.addEventListener("click", powiekszenie);
 })
 
+
+const zamkniecieGalerii = (e)=> {
+    if (e.target == galeriaWraper) {
+        zmniejszenie();
+    } else {
+        return;
+    }
+}
+
 zamknij.addEventListener('click', zmniejszenie);
 poprzedni.addEventListener('click', wstecz);
 nastepny.addEventListener('click', naprzod);
+galeriaWraper.addEventListener('click', zamkniecieGalerii);
