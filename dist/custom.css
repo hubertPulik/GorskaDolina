@@ -762,4 +762,73 @@ footer {
     text-align: center;
   }
 }
+
+/*--- Ciasteczka ---*/
+#cookiesHolder {
+  position: relative;
+}
+
+.cookieConsentContainer {
+  text-align: center;
+  opacity: 1;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0px;
+  background-color: #fff;
+  border-top: 1px solid;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cookieConsentContainer a {
+  color: black;
+  font-weight: 700 !important;
+  margin-left: 10px;
+}
+
+.cookieConsentContainer div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cookieButton {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50px;
+  color: white !important;
+  margin-left: 20px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cookieButton:hover {
+  background-color: gray;
+}
+
+.cookieButton a {
+  color: white;
+  font-size: 14px;
+  font-weight: 700 !important;
+  cursor: pointer;
+  margin-left: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*--- Ciasteczka koniec---*/
 /*# sourceMappingURL=custom.css.map */

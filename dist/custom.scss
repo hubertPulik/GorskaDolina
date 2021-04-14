@@ -620,3 +620,65 @@ footer {
         }
     }
 }
+
+
+/*--- Ciasteczka ---*/
+#cookiesHolder {
+    position: relative;
+}
+
+.cookieConsentContainer {
+    text-align: center;
+    opacity: 1;
+    display: flex !important;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+    background-color: #fff;
+    border-top: 1px solid;
+    width: 100%;
+    font-size: 14px;
+    font-family: $font2;
+}
+
+.cookieConsentContainer a {
+    color: black;
+    font-weight: 700 !important;
+    margin-left: 10px;
+}
+
+.cookieConsentContainer div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cookieButton {
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 50px;
+    color: white !important;
+    margin-left: 20px;
+    transition: all .4s ease-in-out;
+    font-family: $font2;
+}
+
+.cookieButton:hover {
+    background-color: gray;
+}
+
+.cookieButton a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700 !important;
+    cursor: pointer;
+    margin-left: 0px;
+    font-family: $font2;
+}
+
+/*--- Ciasteczka koniec---*/
